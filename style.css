@@ -742,6 +742,66 @@ section.alt {
   margin-bottom: 9px;
 }
 
+.status-badge--live {
+  background: var(--color-navy-light);
+  color: var(--color-navy);
+}
+
+/* ----- 첫 번째 이야기 (콘텐츠 페이지 - 에세이) ----- */
+.feature-article {
+  display: block;
+  max-width: 760px;
+  margin: 0 auto;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  padding: 48px 44px;
+}
+
+.feature-article h3 {
+  margin: 14px 0 30px;
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1.45;
+}
+
+.article-body p {
+  margin: 0 0 22px;
+  font-size: 1.04rem;
+  line-height: 1.95;
+  color: var(--color-text);
+}
+
+.article-body p:last-child {
+  margin-bottom: 0;
+}
+
+.feature-article .article-quote {
+  margin: 32px 0;
+  padding: 36px 32px;
+  max-width: none;
+}
+
+.feature-article .article-quote::before {
+  font-size: 3.4rem;
+}
+
+.feature-article .article-quote p {
+  font-size: 1.08rem;
+}
+
+.article-closing {
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--color-primary-dark);
+  padding-top: 24px;
+  margin: 0;
+  border-top: 2px solid var(--color-primary-light);
+}
+
 /* ----- 함께하기 ----- */
 .ways-grid {
   display: grid;
@@ -987,5 +1047,11 @@ section.alt {
   }
   .pull-quote {
     padding: 36px 24px;
+  }
+  .feature-article {
+    padding: 32px 24px;
+  }
+  .feature-article .article-quote {
+    padding: 28px 22px;
   }
 }

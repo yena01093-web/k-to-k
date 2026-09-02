@@ -1,7 +1,7 @@
 // K to K - 스크롤 시 요소가 부드럽게 나타나는 효과
 (function () {
   var targets = document.querySelectorAll(
-    ".card, .section-title, .section-sub, .story-row, .content-card, .contact-card, .note-box, .pull-quote"
+    ".card, .section-title, .section-sub, .story-row, .content-card, .contact-card, .note-box, .pull-quote, .feature-article"
   );
 
   if (!targets.length) return;
