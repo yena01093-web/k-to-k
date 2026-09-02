@@ -661,6 +661,11 @@ section.alt {
 .thumb-3 { background: linear-gradient(135deg, var(--color-navy), var(--color-teal)); }
 .thumb-4 { background: linear-gradient(135deg, var(--color-navy), var(--color-primary-dark)); }
 .thumb-5 { background: linear-gradient(135deg, var(--color-leaf), var(--color-teal)); }
+.thumb-6 { background: linear-gradient(135deg, var(--color-orange), var(--color-primary)); }
+.thumb-7 { background: linear-gradient(135deg, var(--color-leaf), var(--color-teal)); }
+.thumb-8 { background: linear-gradient(135deg, var(--color-navy), var(--color-primary)); }
+.thumb-9 { background: linear-gradient(135deg, var(--color-orange-dark), var(--color-navy)); }
+.thumb-10 { background: linear-gradient(135deg, var(--color-leaf), var(--color-navy)); }
 
 .feature-list {
   display: flex;
@@ -669,13 +674,25 @@ section.alt {
   margin: 4px 0 6px;
 }
 
-.feature-list span {
+.feature-list span,
+.feature-list a {
   background: var(--color-bg-soft);
   border: 1px solid var(--color-border);
   border-radius: 999px;
   padding: 4px 11px;
   font-size: 0.78rem;
   color: var(--color-text-soft);
+}
+
+.feature-list a {
+  font-weight: 700;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.feature-list a:hover {
+  background: var(--color-primary-light);
+  border-color: var(--color-primary);
+  color: var(--color-primary-dark);
 }
 
 .ai-note {
